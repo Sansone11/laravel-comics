@@ -7,7 +7,7 @@
     </div>
     <div class="icons-bar">
       <div class="icon-logo">
-        {{-- <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+         <img src="../assets/img/buy-comics-digital-comics.png" alt="">
         <h4>DIGITAL COMICS</h4>
       </div>
 
@@ -26,7 +26,7 @@
       <div class="icon-logo">
         <img src="../assets/img/buy-dc-power-visa.svg" alt="">
         <h4>DC POWER VISA</h4>
-      </div> --}}
+      </div>
     </div>
   </main>
   
