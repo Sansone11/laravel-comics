@@ -1,7 +1,7 @@
 footer {
     display: flex;
     flex-direction: column;
-    // background-image: url(images/footer-bg.jpg);
+    background-image: url(./images/footer-bg.jpg);
     background-size:cover;
     background-position: center;
   }
@@ -12,7 +12,7 @@ footer {
     align-items: center;
     color: gray;
     flex-basis: 50%;
-    // background-image: url(images/dc-logo-bg.png);
+    background-image: url(./images/dc-logo-bg.png);
     background-size:auto 130%;
     background-position:center right;
     background-repeat: no-repeat;

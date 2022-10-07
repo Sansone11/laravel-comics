@@ -18,6 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/comics', function () {
-    return view('card');
+    $data = [
+        // 'card '=> config('comics'),
+        'img '=> config('comics.thumb'),
+        'title '=> config('comics.title')
+    ];
+    return view('card',$data);
 });
 
