@@ -6,7 +6,7 @@ Home page - cd Comics
 @endsection
 
 @section('content')
-<main>
+
 
     
 @endsection

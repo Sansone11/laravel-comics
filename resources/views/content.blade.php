@@ -1,8 +1,3 @@
-@extends('app')
-@section('metaTitle','fumetti')
-
-
-@section('content')
 <main>
 
     <div class="container">
@@ -10,7 +5,6 @@
      {{-- <ProductCard v-for ="(slide,i) in slides" :key="i" :thumb="slide.thumb" :series="slide.series" />  --}}
      <button class="load-button">LOAD MORE</button>
     </div>
-<h1>ciaone</h1>
     <div class="icons-bar">
       <div class="icon-logo">
         {{-- <img src="../assets/img/buy-comics-digital-comics.png" alt="">
@@ -35,4 +29,4 @@
       </div> --}}
     </div>
   </main>
-  @endsection
+  
