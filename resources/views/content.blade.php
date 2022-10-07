@@ -1,3 +1,8 @@
+@extends('app')
+@section('metaTitle','fumetti')
+
+
+@section('content')
 <main>
 
     <div class="container">
@@ -30,3 +35,4 @@
       </div> --}}
     </div>
   </main>
+  @endsection

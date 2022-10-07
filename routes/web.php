@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/comics', function () {
-    return view('contact');
+    return view('content');
 });
 
