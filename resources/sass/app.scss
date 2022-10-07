@@ -1,10 +1,27 @@
 //
+@import'./partials/varaibles';
+@import'./header.scss';
+@import'./jumbo.scss';
+@import'./content.scss';
+@import'./card.scss';
+@import'./footer.scss';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: aquamarine;
+ul, ol, menu {
+    list-style: none;
 }
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+

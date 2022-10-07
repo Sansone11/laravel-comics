@@ -1,0 +1,60 @@
+.container {
+    background-color: $bg-main-content-bl;
+    display:grid;
+    grid-template-columns:repeat(6,1fr) ;
+    padding:50px 150px;
+    position: relative;
+    margin:0 auto;
+    .card{
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    .current-button{
+      position: absolute;
+      top: -20px;
+      left:150px;
+      height: 40px;
+      width: 200px;
+      background-color:$bg-active;
+      color: white;
+      border: none;
+  
+    }
+    .load-button{
+      height: 30px;
+      width: 150px;
+      background-color:$bg-active;
+      color: white;
+      border: none;
+      position: absolute;
+      bottom: 20px;
+      right: 50%;
+      
+    }
+  }
+  
+  .icons-bar {
+    height: 170px;
+    background-color: $bg-active;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 4rem;
+  }
+  
+  .icon-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  
+    h4 {
+      font-size: 12px;
+    }
+  }
