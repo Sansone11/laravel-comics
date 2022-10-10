@@ -1,14 +1,14 @@
 pagina show
 @extends('app')
 
-@section('metaTitle',$card['title'])
+@section('metaTitle',$comics['title'])
 
 @section('card')
 
-{{-- @dump($card) --}}
+ {{-- @dump($data)  --}}
 <div class="container">
-    <img src="{{$card['thumb']}}" alt="">
-<h2>{{$card['title']}}</h2>
+    <img src="{{$comics['thumb']}}" alt="">
+<h2>{{$comics['title']}}</h2>
 </div>
     
 @endsection

@@ -33,7 +33,7 @@ Route::get('/comics/{index}', function ($index) {
         'comics'=>$card
 
     ];
-    return view('products.show'.$data);
+    return view('products.show',$data);
 } else {
     abort(404);
 }
