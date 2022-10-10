@@ -7,12 +7,10 @@
 
 <article class="card">
 
-    @foreach ($cards as $card)
-         
+    @foreach ($cards as $key => $card)
+    <a href="{{ route('fumetto',['index' =>$loop->index'title'])}}"></a> 
      <img src="{{$card['thumb']}}" alt="">
     <h2>{{$card['title']}}</h2> 
-
-    {{-- <h1>ciaone</h1> --}}
 
      @endforeach 
 

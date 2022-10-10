@@ -15,12 +15,28 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/comics', function () {
     $data = [
         'cards'=> config('comics'),
     ];
-    return view('card',$data);
-});
+    return view('products.index',$data);
+})->name('comics');
+
+Route::get('/comics/{index}', function ($index) {
+    // return $index;
+    $cards = config('comics');
+    if($index< count($cards)){
+    $card = $cards[$index];
+    $data = [
+        'comics'=>$card
+
+    ];
+    return view('products.show'.$data);
+} else {
+    abort(404);
+}
+    // dd($card);
+})->where('index','[0-11]+')->name('fumetto');
 

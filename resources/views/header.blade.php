@@ -8,11 +8,11 @@
             $links = [
                 [
                     'text' => 'CHARACTERS',
-                    'href' => 'http://127.0.0.1:8000/comics',
+                    'href' => 'http://127.0.0.1:8000/index',
                 ],
                 [
                     'text' => 'COMICS',
-                    'href' => 'http://127.0.0.1:8000/comics',
+                    'href' => 'http://127.0.0.1:8000/index',
                 ],
                 [
                     'text' => 'MOVIE',
@@ -48,13 +48,13 @@
                 ],
             ];
         @endphp
-
-        {{-- <li class="nav_link" v-for="(link,index) in links" :key="index" :class="[ link.current ? 'active': '' ,nav_link]"> <a :href="link.href"> --}}
+{{-- <a href="{{isset( $link['routeName'])? $link['routeName']:'/'}}" --}}
+{{-- class="{{Route::currentRouteName()=== $link['routeName']? 'active': ''}}" --}}
         <nav class="nav">
             @foreach ($links as $link)
             <ul class="list">
                     <li class="nav_link ">
-                        <a>
+                        <a href="">
                             {{ $link['text'] }}
                         </a>
                     </li>
