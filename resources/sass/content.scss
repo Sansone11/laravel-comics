@@ -5,32 +5,9 @@
     padding:50px 150px;
     position: relative;
     margin:0 auto;
-    .card{
-      margin-bottom: 20px;
-      margin-left: 20px;
-    }
-    .current-button{
-      position: absolute;
-      top: -20px;
-      left:150px;
-      height: 40px;
-      width: 200px;
-      background-color:$bg-active;
-      color: white;
-      border: none;
-  
-    }
-    .load-button{
-      height: 30px;
-      width: 150px;
-      background-color:$bg-active;
-      color: white;
-      border: none;
-      position: absolute;
-      bottom: 20px;
-      right: 50%;
-      
-    }
+    
+    
+    
   }
   
   .icons-bar {
@@ -49,12 +26,39 @@
     justify-content: center;
     gap: 2rem;
   
-    img {
-      height: 50px;
-      width: 50px;
-    }
   
-    h4 {
-      font-size: 12px;
-    }
+   
+  }
+  .card{
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+  }
+  .load-button{
+    height: 30px;
+    width: 150px;
+    background-color:$bg-active;
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    
+  }
+  .current-button{
+    position: absolute;
+    top: -20px;
+    left:150px;
+    height: 40px;
+    width: 200px;
+    background-color:$bg-active;
+    color: white;
+    border: none;
+
   }

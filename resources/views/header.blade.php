@@ -54,7 +54,7 @@
             @foreach ($links as $link)
             <ul class="list">
                     <li class="nav_link ">
-                        <a href="">
+                        <a href=""class="{{Route::currentRouteName()=== $link? 'active': ''}}">
                             {{ $link['text'] }}
                         </a>
                     </li>

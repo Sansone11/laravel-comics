@@ -205,6 +205,23 @@ footer {
   flex-basis: 50%;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  flex-basis: 40%;
+}
+
+p {
+  max-width: 200px;
+}
+
+h2 {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;

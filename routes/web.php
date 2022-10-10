@@ -25,18 +25,19 @@ Route::get('/comics', function () {
 })->name('comics');
 
 Route::get('/comics/{index}', function ($index) {
-    // return $index;
-    $cards = config('comics');
-    if($index< count($cards)){
+     $cards = config('comics');
+     if($index < count($cards)){
     $card = $cards[$index];
-    $data = [
-        'comics'=>$card
+     $data = [
+         'comics'=>$card
 
-    ];
-    return view('products.show',$data);
-} else {
-    abort(404);
+     ];
+    
+     return view('products.show',$data);
 }
-    // dd($card);
-})->where('index','[0-11]+')->name('fumetto');
+  else {
+     abort(404);
+ }
+    
+})->name('fumetto');
 
