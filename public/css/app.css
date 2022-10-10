@@ -24,32 +24,27 @@
   width: 50px;
 }
 
-.active {
-  background-color: #0282F9;
-  color: white;
-}
-
 .nav {
-  display: inline-block;
+  display: flex;
   margin-right: auto;
 }
-.nav .list {
+
+.list {
   max-width: 200px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 1rem;
 }
-.nav .list .nav_link {
+
+.nav_link {
   padding: 0 0.75rem;
   line-height: 1, 5rem;
+  display: flex;
 }
-.nav .list .nav_link.active, .nav .list .nav_link:hover {
+
+li:hover {
   background-color: #0282F9;
   color: white;
-}
-.nav .list li {
-  list-style: none;
 }
 
 .jumbo {

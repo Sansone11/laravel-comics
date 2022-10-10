@@ -19,9 +19,7 @@ Route::get('/', function () {
 
 Route::get('/comics', function () {
     $data = [
-        // 'card '=> config('comics'),
-        'img '=> config('comics.thumb'),
-        'title '=> config('comics.title')
+        'cards'=> config('comics'),
     ];
     return view('card',$data);
 });

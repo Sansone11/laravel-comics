@@ -10,6 +10,7 @@
     ol,
     menu {
         list-style: none;
+
     }
 
     a {
@@ -27,36 +28,33 @@
     width: 50px;
 }
 
-.active {
-    background-color: $bg-active;
-    color: white;
-}
+// .active {
+//     background-color: $bg-active;
+//     color: white;
+// }
 
 .nav {
-    display: inline-block;
+    display: flex;
     margin-right: auto;
-
+}
     .list {
         max-width: 200px;
         display: flex;
-        flex-direction: row;
         align-items: center;
         gap: 1rem;
+    }    
 
         .nav_link {
             padding: 0 0.75rem;
             line-height: 1, 5rem;
+            display: flex;
+        }           
 
-
-            &.active,
-            &:hover {
-                background-color: $bg-active;
-                color: white;
-            }
+        li:hover {
+            background-color: $bg-active;
+            color: white;
         }
-
-        li {
-            list-style: none;
-        }
-    }
-}
+        // li {
+        //     list-style: none;
+        // }
+    
